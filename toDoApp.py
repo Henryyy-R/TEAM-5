@@ -29,15 +29,19 @@ def main():
         if ch=="1":
             t = input("enter task : ")
             addtask(t)
+            print("=====================================")
         elif ch=="2":
             showTasks()
         elif ch=="3":
             n=int(input("enter task no to remove: "))
-            removetask(n)   
+            removetask(n)
+            print("=====================================")
         elif ch=="4":
             break;
         else:
             print("wrong choice!!")
+            print("=====================================")
 main()
+
 
 
