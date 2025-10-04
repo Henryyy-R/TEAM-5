@@ -32,6 +32,7 @@ def main():
             print("=====================================")
         elif ch=="2":
             showTasks()
+            print("=====================================")
         elif ch=="3":
             n=int(input("enter task no to remove: "))
             removetask(n)
@@ -42,6 +43,7 @@ def main():
             print("wrong choice!!")
             print("=====================================")
 main()
+
 
 
 
