@@ -1,5 +1,9 @@
 # toDoApp.py
 #hello lim
+#1.) Better UI in main - Rich
+#2.) Better LOGIC (Error at remove or pop) - Henry
+#3.) Proper Error Handling - Jabs
+#4.) Task Saving after closing app (No need to retype) - Finau
 tasks=[]
 
 def addtask(task) :
@@ -43,6 +47,7 @@ def main():
             print("wrong choice!!")
             print("=====================================")
 main()
+
 
 
 
