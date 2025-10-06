@@ -42,9 +42,9 @@ def addTask(task):     # Add a new task to the list and save it
 
 def showTask():     # Display all tasks with numbering
     try:
-        print("\n" + "=" * 50)
-        print("YOUR TASK LIST".center(50))
-        print("=" * 50)
+        print("\n" + "=" * 45)
+        print("YOUR TASK LIST".center(45))
+        print("=" * 45)
         
         if len(tasks) == 0: 
             print("\n No tasks yet. Add a task first.\n") 
@@ -82,12 +82,12 @@ def header():
 
 def menu():
     print("\n MENU OPTIONS:")
-    print(" " + "-" * 40)
+    print(" " + "-" * 45)
     print("    [1] Add Task")
     print("    [2] Show Tasks")
     print("    [3] Remove Task")
     print("    [4] Exit")
-    print(" " + "-" * 40)
+    print(" " + "-" * 45)
     
 def main():
     loadTask()
@@ -96,12 +96,12 @@ def main():
             header()
             menu()
 
-            ch = input("Enter your choice (1 - 4): ").strip()
+            ch = input(" Enter your choice (1 - 4): ").strip()
             
             if ch == "1":
-                print("\n" + "-" * 40)
-                print("  ADD NEW TASK")
-                print("-" * 40)
+                print("\n" + "-" * 45)
+                print(" ADD NEW TASK")
+                print("-" * 45)
                 t = input(" Enter task description: ")
                 addTask(t)
                 
@@ -119,10 +119,10 @@ def main():
                         print("ERROR! Please enter a valid integer.")
                         
             elif ch == "4":
-                print("\n" + "=" * 50)
+                print("\n" + "=" * 45)
                 print("\n Thank you for using Task Manager!")
                 print(" Goodbye!\n")
-                print("=" * 50 + "\n")
+                print("=" * 45 + "\n")
                 break
                 
             else:
@@ -132,6 +132,7 @@ def main():
 
 if __name__ == "__main__":
     main() # Start the task manager
+
 
 
 
