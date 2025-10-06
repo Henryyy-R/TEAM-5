@@ -9,9 +9,9 @@
 
 import os
 
-tasks = []
+tasks = []     # Stores all current tasks in memory
 
-def load_tasks():
+def load_tasks():     # Load tasks from 'tasks.txt' if the file exists
     try:
         if os.path.exists("tasks.txt"):
             with open("tasks.txt", "r") as f:
@@ -20,7 +20,7 @@ def load_tasks():
     except Exception as e:
         print(f"Error loading tasks: {e}")
 
-def save_tasks():
+def save_tasks():     # Save current tasks to 'tasks.txt'
     try:
         with open("tasks.txt", "w") as f:
             for task in tasks:
@@ -28,7 +28,7 @@ def save_tasks():
     except Exception as e:
         print(f"Error saving tasks: {e}")
 
-def addtask(task): 
+def addtask(task):     # Add a new task to the list and save it
     try:
         if not task.strip():
             print("Task cannot be empty.")
@@ -39,7 +39,7 @@ def addtask(task):
     except Exception as e:
         print(f"Error adding task: {e}")
 
-def showTasks(): 
+def showTasks():     # Display all tasks with numbering
     try:
         if len(tasks) == 0: 
             print("No tasks yet") 
@@ -49,7 +49,7 @@ def showTasks():
     except Exception as e:
         print(f"Error showing tasks: {e}")
 
-def removetask(task_number):
+def removetask(task_number):     # Remove a task by its number (1-based index)
     try:
         if not tasks:
             print("No tasks to remove.")
@@ -102,5 +102,6 @@ def main():
             print(f"Unexpected error: {e}")
 
 if __name__ == "__main__":
-    main()
+    main() # Start the task manager
+
 
