@@ -2,8 +2,8 @@
 
 # 1.) Better UI in main - Rich
 # 2.) Better LOGIC (Error at remove or pop) - Henry ✅ 10/6/2025 3:16 PM
-# 3.) Task Saving after closing app (No need to retype) - Finau ✅ 10/6/2025 5:24PM
-# 4.) Proper Error handling - Jabs
+# 3.) Task Saving after closing app (No need to retype) - Finau ✅ 10/6/2025 5:24 PM
+# 4.) Proper Error handling - Jabs ✅ 10/6/2025 - 6:36 PM
 # Added Error handlers on addtask, save_task, showTasks, removeTasks, and on main function. 
 # Mainly focused on try except blocks so that the program will crash smoothly if the need arises.
 
@@ -103,3 +103,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
