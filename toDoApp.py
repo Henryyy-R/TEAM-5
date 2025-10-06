@@ -1,27 +1,22 @@
 # toDoApp.py
 # hello lim
 # 1.) Better UI in main - Rich
-# 2.) Better LOGIC (Error at remove or pop) - Henry
+# 2.) Better LOGIC (Error at remove or pop) - Henry all goods
 # 3.) Proper Error Handling - Jabs
 # 4.) Task Saving after closing app (No need to retype) - Finau
 
 tasks = []
 
-def addtask(task):
-    task = task.strip()
-    if task:
-        tasks.append(task)
-        print("Task added!")
-    else:
-        print("Empty task not added.")
-
-def showTasks():
-    if not tasks:
-        print("No tasks yet.")
-    else:
-        print("Your tasks:")
-        for i, t in enumerate(tasks, start=1):
-            print(f"{i}. {t}")
+def addtask(task): 
+    tasks.append(task) 
+    print("task added!") 
+    
+def showTasks( ): 
+    if len(tasks)==0: 
+        print("no tasks yet") 
+    else: 
+        for i in range (len(tasks)): 
+            print(i+1,".",tasks[i])
 
 def removetask(task_number):
     """Remove a task by 1-based task_number (user-facing)."""
