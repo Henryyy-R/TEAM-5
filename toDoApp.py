@@ -87,7 +87,7 @@ def menu():
     print("    [2] Show Tasks")
     print("    [3] Remove Task")
     print("    [4] Exit")
-    print("  " + "-" * 40)
+    print(" " + "-" * 40)
     
 def main():
     loadTask()
@@ -132,6 +132,7 @@ def main():
 
 if __name__ == "__main__":
     main() # Start the task manager
+
 
 
 
