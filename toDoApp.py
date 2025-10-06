@@ -1,9 +1,9 @@
 # toDoApp.py
-# hello lim
+
 # 1.) Better UI in main - Rich
-# 2.) Better LOGIC (Error at remove or pop) - Henry all goods
+# 2.) Better LOGIC (Error at remove or pop) - Henry ✅ 10/6/2025 3:16 PM
 # 3.) Proper Error Handling - Jabs
-# 4.) Task Saving after closing app (No need to retype) - Finau
+# 4.) Task Saving after closing app (No need to retype) - Finau ✅ 10/6/2025 5:24PM
 
 import os
 
@@ -80,3 +80,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
